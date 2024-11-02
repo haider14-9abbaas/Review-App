@@ -1,0 +1,121 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #5e6d72;
+    margin: 0;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.container:hover {
+    transform: scale(1.02);
+}
+
+h1, h2 {
+    text-align: center;
+    color: #5e280d;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #333; /* Darker color for better readability */
+    line-height: 1.5; /* Improve readability */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background: #c5a9a9;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+li:hover {
+    background: #e5e8ec;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+li img {
+    border-radius: 50%;
+    width: 120px; /* Increased image size */
+    height: 120px; /* Increased image size */
+    margin-bottom: 12px;
+    border: 2px solid #5e35b1;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+button {
+    padding: 12px;
+    background-color: #a0a0bd;
+    color: #000000;
+    border: none;
+    font-size: 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 48%;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s; /* Added box-shadow transition */
+}
+
+button:hover {
+    background-color: #9c9b96;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(251, 192, 45, 0.5);
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 20px; /* Reduced padding for mobile */
+    }
+
+    .container {
+        padding: 20px; /* Adjusted container padding */
+    }
+
+    li img {
+        width: 60px; /* Smaller image size for mobile */
+        height: 60px; /* Smaller image size for mobile */
+    }
+
+    button {
+        font-size: 16px; /* Smaller button font size */
+    }
+
+    .button-container {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%; /* Full width buttons on mobile */
+        margin-bottom: 10px;
+    }
+}
